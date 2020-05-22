@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #1a2444;
+}
+body #wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+body #wrapper #score {
+  border: 1px solid #b8b8b8;
+  padding: 2%;
+}
+body #wrapper #score:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body #wrapper #score h1 {
+  margin: 0 0 20px 0;
+  color: #ffdf72;
+  font-size: 20px;
+}
+body #wrapper #score .card {
+  font-size: 20px;
+  float: left;
+  width: 32%;
+  margin: 0.5%;
+  text-align: center;
+  color: #0443a4;
+  background: white;
+}
+body #wrapper #score .card .number {
+  font-size: 24px;
+  background: #1a2444;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  font-weight: bold;
+}
+body #wrapper #game-board .button {
+  border-radius: 50%;
+  padding: 40px 45px;
+  text-indent: -500000px;
+  position: absolute;
+}
+body #wrapper #game-board .button[data-type="paper"] {
+  background: #0f43a4;
+}
+body #wrapper #game-board .button[data-type="stone"] {
+  background: #1ef692;
+}
+body #wrapper #game-board .button[data-type="scissors"] {
+  background: #e3ff5e;
+}
+body #wrapper #game-board .button[data-type="lizzard"] {
+  background: #cb6cb0;
+}
+body #wrapper #game-board .button[data-type="spock"] {
+  background: #ff9766;
+}
+/*# sourceMappingURL=theme.css.map */

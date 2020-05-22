@@ -1,0 +1,74 @@
+@background: #1a2444;
+@main-color: #b8b8b8;
+@blue-color: #0443a4;
+@title-color: #ffdf72;
+
+@main-font: 'Roboto', sans-serif;
+
+@font-size: 16px;
+@font-title: 20px;
+@font-card: 20px;
+@font-number: 24px;
+
+body{
+  font-family: @main-font;
+  background: @background;
+  #wrapper{
+    width: 80%;
+    margin: 0 auto;
+    #score{
+      border: 1px solid @main-color;
+      padding: 2%;
+      &:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      h1{
+        margin: 0 0 20px 0;
+        color: @title-color;
+        font-size: @font-title;
+      }
+      .card{
+        font-size: @font-card;
+        float: left;
+        width: 32%;
+        margin: 0.5%;
+        text-align: center;
+        color: @blue-color;
+        background: white;
+        .number{
+          font-size: @font-number;
+          background: @background;
+          color: white;
+          border: 1px solid white;
+          padding: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+    #game-board{
+      .button{
+        border-radius: 50%;
+        padding: 40px 45px;
+        text-indent: -500000px;
+        position: absolute;
+        &[data-type="paper"]{
+          background: #0f43a4;
+        }
+        &[data-type="stone"]{
+          background: #1ef692;
+        }
+        &[data-type="scissors"]{
+          background: #e3ff5e;
+        }
+        &[data-type="lizzard"]{
+          background: #cb6cb0;
+        }
+        &[data-type="spock"]{
+          background: #ff9766;
+        }
+      }
+    }
+  }
+}
